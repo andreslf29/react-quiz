@@ -1,0 +1,28 @@
+@import '../../styles/vars.scss';
+
+.home, .result{
+    img{
+        max-width: 150px;
+        object-fit: cover;
+    }
+}
+
+.settings__select{
+    display: flex;
+    flex-direction: column;
+    color: $dark;
+    
+
+    div{
+        margin-bottom: .5em;
+        font-family: $nunito;
+    }
+
+    input{
+        border-color: red;
+        border-radius: 20px !important;
+    }
+
+}
+
+

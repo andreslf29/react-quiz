@@ -1,0 +1,148 @@
+@import "../../styles/vars.scss";
+
+.question {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1{
+    font-size: 1.2rem;
+    color: $dark;
+  }
+
+  h2{
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: $text;
+  }
+}
+
+.singleQuestion {
+  width: 95%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: .5em;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+  margin: .25em;
+}
+
+.singleOption {
+  width: 90%;
+  height: fit-content;
+  padding: .5em .75em;
+  font-size: .9rem;
+  line-height: 1.1rem;
+  margin: .5em auto;
+  color: $text;
+  font-family: $nunito;
+  border-radius: 5px;
+  border: 1px solid $dark;
+  background-color: $white;
+
+  &:hover{
+    cursor: pointer;
+    color: $dark;
+    transition: all .2s ease-in-out;
+  }
+}
+
+
+.controls {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 1em;
+}
+
+.select {
+  background-color: $accent;
+  color: white;
+  box-shadow: 0 0 1px black;
+  -webkit-animation: vibrate-2 0.2s linear both;
+  animation: vibrate-2 0.2s linear both;
+}
+
+.wrong {
+  color: red;
+  border-color: red;
+  box-shadow: 0 0 1px black;
+
+}
+
+.vibrate-2 {
+	-webkit-animation: vibrate-2 0.2s linear both;
+	        animation: vibrate-2 0.2s linear both;
+}
+
+@-webkit-keyframes vibrate-2 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  60% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-2 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  60% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+.quit__boton{
+  background-color: $rose !important;
+
+  &:hover{
+    background-color: $dark !important;
+  }
+}

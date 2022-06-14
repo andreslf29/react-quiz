@@ -1,0 +1,23 @@
+@import "../../styles/vars.scss";
+
+.result{
+    h2{
+        font-size: 2rem;
+        line-height: 2.2rem;
+        text-align: center;
+
+        span{
+            display: block;
+
+            &:first-of-type{
+                color: $dark;
+                font-family: 1.8rem;
+                line-height: 1.8rem;
+            }
+
+            &:last-of-type{
+                color: $rose;
+            }
+        }
+    }
+}
